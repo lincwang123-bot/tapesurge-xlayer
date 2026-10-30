@@ -1,0 +1,52 @@
+{
+ "status": "live",
+ "source": "TESTNET MOCK (MockFirstoBidExchange)",
+ "sourceBlock": "138845038",
+ "asOf": "2026-10-25T12:24:08.000Z",
+ "exchange": "0x47943331385B18dAB59d745d1397B09DC3DBD2F8",
+ "bids": [
+  {
+   "orderId": "0",
+   "maker": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "nftRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "refundRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "dailyCapacityPriceWei": "131863000000000000",
+   "remainingBudgetWei": "12000000000000000",
+   "minCircuitH": "0",
+   "maxCircuitH": "0",
+   "feeBps": 100,
+   "state": "active",
+   "createdBlock": "138845038",
+   "createdAt": "2026-10-25T12:24:08.000Z"
+  },
+  {
+   "orderId": "1",
+   "maker": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "nftRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "refundRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "dailyCapacityPriceWei": "127907000000000000",
+   "remainingBudgetWei": "8000000000000000",
+   "minCircuitH": "0",
+   "maxCircuitH": "0",
+   "feeBps": 100,
+   "state": "active",
+   "createdBlock": "138845038",
+   "createdAt": "2026-10-25T12:24:08.000Z"
+  },
+  {
+   "orderId": "2",
+   "maker": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "nftRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "refundRecipient": "0x9219F75d863e54A066be9F713061FF64302Fa8de",
+   "dailyCapacityPriceWei": "133182000000000000",
+   "remainingBudgetWei": "8000000000000000",
+   "minCircuitH": "10",
+   "maxCircuitH": "15",
+   "feeBps": 100,
+   "state": "active",
+   "createdBlock": "138845038",
+   "createdAt": "2026-10-25T12:24:08.000Z"
+  }
+ ],
+ "fills": []
+}

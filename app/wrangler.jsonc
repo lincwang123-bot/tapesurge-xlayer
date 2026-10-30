@@ -1,0 +1,20 @@
+{
+  // TapeSurge 应用（参与入口），和官网分开部署：官网是 tapesurge.com，应用是 app.tapesurge.com。
+  // 发布需要你本人在终端登录 Cloudflare（npx wrangler login），然后 npm run build && npx wrangler deploy。
+  // 页面文件由 assets 直接返回；只有 /api/*（Telegram 提醒：机器人对话、钱包签名绑定、发送器读名单）走 worker/index.js。
+  "name": "tapesurge-app",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "routes": [{ "pattern": "app.tapesurge.com", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": { "APP_URL": "https://app.tapesurge.com" },
+  // 第一次部署前：npx wrangler d1 create tapesurge-reminders，把输出的 database_id 填到下面；
+  // 再 npx wrangler d1 execute tapesurge-reminders --remote --file worker/schema.sql 建表。
+  "d1_databases": [{ "binding": "DB", "database_name": "tapesurge-reminders", "database_id": "8d044f96-3f6c-426b-9e40-00ac16bbafed" }]
+}

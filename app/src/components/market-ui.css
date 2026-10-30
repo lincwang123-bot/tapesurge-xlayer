@@ -1,0 +1,12 @@
+/* X Layer RIG 矿机市场页（RigMarket.jsx）：沿用全局的 panel / table / trade-box / row 样式，只补布局 */
+.rig-market { display: flex; flex-direction: column; gap: 20px; }
+.rig-market .market-sub { font-size: 15px; margin: 14px 0 8px; }
+.rig-market .market-actions { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.rig-market .market-actions small { align-self: center; }
+.rig-market .market-forms { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); margin-top: 8px; }
+.rig-market td { white-space: nowrap; }
+@media (max-width: 640px) {
+  .rig-market .market-actions { justify-content: flex-start; }
+  .rig-market td { white-space: normal; }
+}
+.rig-market .market-add { margin-top: 8px; max-width: 520px; }

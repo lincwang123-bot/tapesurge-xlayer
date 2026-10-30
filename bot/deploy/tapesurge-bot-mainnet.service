@@ -1,0 +1,17 @@
+[Unit]
+Description=TapeSurge operator bot (BSC mainnet)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/tapesurge-bot
+EnvironmentFile=%h/tapesurge-bot/run/mainnet.env
+EnvironmentFile=%h/tapesurge-bot/secrets/rpc-mainnet.env
+EnvironmentFile=-%h/tapesurge-bot/secrets/telegram.env
+ExecStart=/usr/bin/env node src/index.js
+Restart=always
+RestartSec=30
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=default.target

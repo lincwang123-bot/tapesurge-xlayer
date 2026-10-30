@@ -1,0 +1,24 @@
+# systemd 服务：sudo cp deploy/tapesurge-bot.service /etc/systemd/system/
+#              sudo systemctl daemon-reload && sudo systemctl enable --now tapesurge-bot
+# 看日志：journalctl -u tapesurge-bot -f
+[Unit]
+Description=TapeSurge operator bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tapesurge
+WorkingDirectory=/home/tapesurge/bot
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=20
+# 收紧权限：只能写自己的 state/ 和 logs/
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/tapesurge/bot/state /home/tapesurge/bot/logs
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

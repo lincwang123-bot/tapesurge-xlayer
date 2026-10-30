@@ -1,0 +1,116 @@
+.board-list .board-rules {
+  gap: 16px;
+}
+
+.board-rules .board-rules-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+}
+
+.board-rules-summary > div {
+  min-width: 0;
+}
+
+.board-rules-summary dt {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.board-rules-summary dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.board-rules .board-rules-risk {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #ead695;
+  border-radius: 10px;
+  background: #fff6d9;
+  color: #695123;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.board-rules .board-rules-full {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  font-size: 13px;
+}
+
+.board-rules-full > summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.board-rules-full > summary:focus-visible {
+  outline: 2px solid #8e63b7;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+.board-rules-full .kind-intro {
+  margin-top: 12px;
+}
+
+.join-panel .pass-feedback {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.join-panel .join-guidance {
+  display: grid;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-inner);
+  padding: 14px 16px;
+  background: #f0e9fa;
+}
+
+.join-guidance p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.join-guidance .join-next-step {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 620px) {
+  .board-rules .board-rules-summary {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+  }
+
+  .board-rules-summary > div {
+    display: grid;
+    grid-template-columns: 5em minmax(0, 1fr);
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .board-rules-summary dt {
+    margin: 0;
+  }
+
+  .board-rules-summary dd {
+    font-size: 13px;
+  }
+}
+
+/* 一键兑换（components/Zap.jsx） */
+.zap-pay { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border: 1px dashed #c9a6ff; border-radius: var(--radius-inner); background: #b9a4ff12; }
+.zap-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; font-size: 14px; }
+.zap-options { display: flex; gap: 8px; flex-wrap: wrap; }
+.zap-options .chip { cursor: pointer; }
+.zap-options .chip.is-on { background: var(--yellow); color: var(--yellow-ink); border-color: transparent; font-weight: 650; }
+.zap-sell { display: flex; flex-direction: column; gap: 12px; }

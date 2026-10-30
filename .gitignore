@@ -1,0 +1,19 @@
+# 依赖、构建产物、本地链
+node_modules/
+dist/
+.wrangler/
+out/
+cache/
+broadcast/
+# 密钥和本地环境（不提交任何 .env；模板用 .env.example）
+.env*
+!.env.example
+.dev.vars
+secrets/
+run/
+# 运行状态和日志
+state/
+logs/
+*.log
+!contracts/deployments/1952-run.log
+.DS_Store

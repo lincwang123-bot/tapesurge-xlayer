@@ -1,0 +1,1520 @@
+[
+ {
+  "type": "constructor",
+  "inputs": [
+   {
+    "name": "p",
+    "type": "tuple",
+    "internalType": "struct BoardFactory.Params",
+    "components": [
+     {
+      "name": "splitter",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "board",
+      "type": "tuple",
+      "internalType": "struct TapeBoard.Config",
+      "components": [
+       {
+        "name": "bem",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "pod",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "machineRules",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "machineBeacon",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "passCircuits",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "passBeacon",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "passNetlistHash",
+        "type": "bytes32",
+        "internalType": "bytes32"
+       },
+       {
+        "name": "foundation",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "feeRecipient",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "randomSource",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "splitter",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "priceFeed",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "sales",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "trader",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "positions",
+        "type": "address",
+        "internalType": "address"
+       },
+       {
+        "name": "entryFeeBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "recruitDuration",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "minStartBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyStartBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyStepBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyStepInterval",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyCapDays",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyMaxPrice",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "buyRoundDuration",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "verifiedShareBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "minMachineWeight",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "maxMachineWeight",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "maxMachines",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "minMachineAge",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "sellStartBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "sellFloorBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "maxDuration",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "vrfRetryDelay",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "vrfSafeExitDelay",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "operatorGrace",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "claimWindow",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "sentinelResumeDelay",
+        "type": "uint256",
+        "internalType": "uint256"
+       }
+      ]
+     },
+     {
+      "name": "targets",
+      "type": "tuple",
+      "internalType": "struct BoardFactory.TargetRules",
+      "components": [
+       {
+        "name": "initialTarget",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "minTarget",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "maxTarget",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "rounding",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "minStakeBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "maxStakeBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "fastFillWindow",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "growBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "partialBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       },
+       {
+        "name": "failBps",
+        "type": "uint256",
+        "internalType": "uint256"
+       }
+      ]
+     },
+     {
+      "name": "genesisMintThreshold",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "genesisDelay",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "monthFactory",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "initialOperator",
+      "type": "address",
+      "internalType": "address"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "BPS",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "UPGRADE_DELAY",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "UPGRADE_WINDOW",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "activateImplementation",
+  "inputs": [],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "admin",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "allBoards",
+  "inputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "attemptsOf",
+  "inputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "boardByNumber",
+  "inputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "boardConfig",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "tuple",
+    "internalType": "struct TapeBoard.Config",
+    "components": [
+     {
+      "name": "bem",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "pod",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "machineRules",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "machineBeacon",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "passCircuits",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "passBeacon",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "passNetlistHash",
+      "type": "bytes32",
+      "internalType": "bytes32"
+     },
+     {
+      "name": "foundation",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "feeRecipient",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "randomSource",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "splitter",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "priceFeed",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "sales",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "trader",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "positions",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "entryFeeBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "recruitDuration",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "minStartBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyStartBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyStepBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyStepInterval",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyCapDays",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyMaxPrice",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "buyRoundDuration",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "verifiedShareBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "minMachineWeight",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxMachineWeight",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxMachines",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "minMachineAge",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "sellStartBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "sellFloorBps",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxDuration",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "vrfRetryDelay",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "vrfSafeExitDelay",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "operatorGrace",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "claimWindow",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "sentinelResumeDelay",
+      "type": "uint256",
+      "internalType": "uint256"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "boardCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "boardImplementation",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "cancelImplementation",
+  "inputs": [],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "currentNumber",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "failBps",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "fastFillWindow",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "genesisDelay",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "genesisMintThreshold",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "genesisStarted",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "bool",
+    "internalType": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "growBps",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "implementationCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "implementationHistory",
+  "inputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "implementationOf",
+  "inputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "initialTarget",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "isBoard",
+  "inputs": [
+   {
+    "name": "account",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "bool",
+    "internalType": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "maxStakeBps",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "maxTarget",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "minStakeBps",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "minTarget",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "monthFactory",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "nextTarget",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "noteSentinel",
+  "inputs": [],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "numberOf",
+  "inputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "onBoardFailed",
+  "inputs": [],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "onBoardStarted",
+  "inputs": [
+   {
+    "name": "full",
+    "type": "bool",
+    "internalType": "bool"
+   },
+   {
+    "name": "elapsed",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "operator",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "partialBps",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "passCircuits",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "pendingEta",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "pendingImplementation",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "proposeImplementation",
+  "inputs": [
+   {
+    "name": "creationCode",
+    "type": "bytes",
+    "internalType": "bytes"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "impl",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "rankOf",
+  "inputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "recruitingBoard",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "registerStart",
+  "inputs": [
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "rank",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "reopen",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "rewardBoard",
+  "inputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "sentinelSince",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "setOperator",
+  "inputs": [
+   {
+    "name": "newOperator",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "splitter",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract GenesisSplitter"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "stakeRange",
+  "inputs": [
+   {
+    "name": "target",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "minStake",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxStake",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "startCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "startGenesis",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "targetRounding",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "transistors",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract ITransistors"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "name": "BoardOpened",
+  "inputs": [
+   {
+    "name": "number",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "board",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "attempt",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "target",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "minStake",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxStake",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "BoardStarted",
+  "inputs": [
+   {
+    "name": "rank",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "board",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "monthBoard",
+    "type": "bool",
+    "indexed": false,
+    "internalType": "bool"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "GenesisStarted",
+  "inputs": [
+   {
+    "name": "minted",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "elapsed",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "ImplementationActivated",
+  "inputs": [
+   {
+    "name": "previous",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "implementation",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "version",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "ImplementationCancelled",
+  "inputs": [
+   {
+    "name": "implementation",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "ImplementationProposed",
+  "inputs": [
+   {
+    "name": "implementation",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "codehash",
+    "type": "bytes32",
+    "indexed": false,
+    "internalType": "bytes32"
+   },
+   {
+    "name": "eta",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "OperatorChanged",
+  "inputs": [
+   {
+    "name": "previous",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "current",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "SentinelNoted",
+  "inputs": [
+   {
+    "name": "since",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "TargetAdjusted",
+  "inputs": [
+   {
+    "name": "oldTarget",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "newTarget",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "error",
+  "name": "BadParams",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BadTemplate",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "DeployFailed",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "FailedDeployment",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "FeedNotPosted",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "GenesisAlreadyStarted",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "GenesisConditionNotMet",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "InsufficientBalance",
+  "inputs": [
+   {
+    "name": "balance",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "needed",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "error",
+  "name": "NoPendingImplementation",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NothingToReopen",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "OnlyAdmin",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "OnlyFeeSafe",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "OnlyMonthFactory",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "OnlyRecruitingBoard",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "ProposalExpired",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "SentinelTripped",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "TooEarly",
+  "inputs": []
+ }
+]

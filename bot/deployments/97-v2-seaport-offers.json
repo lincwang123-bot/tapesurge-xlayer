@@ -1,0 +1,90 @@
+{
+ "offers": [
+  {
+   "orderHash": "0xf90ebc5d96edc41a62933f867e41231603d83d7241f0a532859f12be744158b2",
+   "signature": "0x",
+   "parameters": {
+    "offerer": "0x9219f75d863e54a066be9f713061ff64302fa8de",
+    "zone": "0x0000000000000000000000000000000000000000",
+    "offer": [
+     {
+      "itemType": "1",
+      "token": "0x11c6218d6fc476eff09a2e96a1f1aef29ad5f0d3",
+      "identifierOrCriteria": "0",
+      "startAmount": "7135522000000000",
+      "endAmount": "7135522000000000"
+     }
+    ],
+    "consideration": [
+     {
+      "itemType": "4",
+      "token": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+      "identifierOrCriteria": "0",
+      "startAmount": "1",
+      "endAmount": "1",
+      "recipient": "0x9219f75d863e54a066be9f713061ff64302fa8de"
+     },
+     {
+      "itemType": "1",
+      "token": "0x11c6218d6fc476eff09a2e96a1f1aef29ad5f0d3",
+      "identifierOrCriteria": "0",
+      "startAmount": "71355220000000",
+      "endAmount": "71355220000000",
+      "recipient": "0x9219f75d863e54a066be9f713061ff64302fa8de"
+     }
+    ],
+    "orderType": "0",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "salt": "3961020375346419338704240964764017742144032568083375470420340399338470260117",
+    "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "totalOriginalConsiderationItems": "2",
+    "counter": "0"
+   }
+  },
+  {
+   "orderHash": "0xdd27a7e6704bc149730f6d932b5917c4226ce616a7a7a89bbc5a4bc10323af76",
+   "signature": "0x",
+   "parameters": {
+    "offerer": "0x9219f75d863e54a066be9f713061ff64302fa8de",
+    "zone": "0x0000000000000000000000000000000000000000",
+    "offer": [
+     {
+      "itemType": "1",
+      "token": "0x11c6218d6fc476eff09a2e96a1f1aef29ad5f0d3",
+      "identifierOrCriteria": "0",
+      "startAmount": "7135522000000000",
+      "endAmount": "7135522000000000"
+     }
+    ],
+    "consideration": [
+     {
+      "itemType": "4",
+      "token": "0x1d23dbe7d598fcd598310f746a0d9ff599104239",
+      "identifierOrCriteria": "0",
+      "startAmount": "1",
+      "endAmount": "1",
+      "recipient": "0x9219f75d863e54a066be9f713061ff64302fa8de"
+     },
+     {
+      "itemType": "1",
+      "token": "0x11c6218d6fc476eff09a2e96a1f1aef29ad5f0d3",
+      "identifierOrCriteria": "0",
+      "startAmount": "71355220000000",
+      "endAmount": "71355220000000",
+      "recipient": "0x9219f75d863e54a066be9f713061ff64302fa8de"
+     }
+    ],
+    "orderType": "0",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "salt": "62325052333634044899265203309504376393620130612302514861707006118950202080960",
+    "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "totalOriginalConsiderationItems": "2",
+    "counter": "0"
+   }
+  }
+ ]
+}

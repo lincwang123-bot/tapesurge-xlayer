@@ -1,0 +1,19 @@
+# 密钥和本地环境（本工程不读任何 .env；以防万一）
+.env*
+!.env.example
+
+# 构建产物和 forge 的本地记录（cache/ 里可能有 RPC 地址，broadcast/ 里有交易记录）
+out/
+cache/
+broadcast/
+
+# 日志和本地链的部署文件（测试网的交易记录 1952-run.log 保留）
+*.log
+!deployments/1952-run.log
+deployments/31337*
+deployments/*.pending.json
+deployments/*.simulated.json
+deployments/*-start-balance
+deployments/*.invalid
+
+.DS_Store

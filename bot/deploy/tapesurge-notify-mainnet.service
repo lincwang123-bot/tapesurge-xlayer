@@ -1,0 +1,16 @@
+[Unit]
+Description=TapeSurge @TapeSurgeBot notifier (BSC mainnet)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/tapesurge-bot
+EnvironmentFile=%h/tapesurge-bot/run/mainnet-notify.env
+EnvironmentFile=%h/tapesurge-bot/secrets/reminder.env
+ExecStart=/usr/bin/env node src/notify/index.js
+Restart=always
+RestartSec=60
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=default.target

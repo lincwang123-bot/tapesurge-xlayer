@@ -1,0 +1,268 @@
+{
+ "note": "TESTNET MOCK tapeout.market feed (GET /api/v1/circuit-market/feed): TAPEOUT_OFFICIAL = MockOfficialMarket, TAPEMARKET_SEAPORT = MockSeaport (orders validated on chain; full orders in the tape-listings file, like GET /api/v1/listings/<orderHash>). The last item (weight 5) is deliberately ineligible.",
+ "generatedAt": "2026-10-25T12:26:14.000Z",
+ "returned": 9,
+ "items": [
+  {
+   "hashrate": "10",
+   "poolState": "verified",
+   "processor": "tapeout",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "4509040",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "129210253180277841",
+   "listing": {
+    "source": "TAPEOUT_OFFICIAL",
+    "protocol": "TAPEOUT_OFFICIAL",
+    "chainId": 97,
+    "seller": "0x32d2fbd8b2a776bffe4b7b8e051c863adfd2ccc3",
+    "collectionAddress": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+    "tokenId": "20",
+    "priceWei": "5826142000000000",
+    "buyerPaysWei": "5826142000000000",
+    "estimatedProtocolFeeWei": "58261420000000",
+    "listingId": "1",
+    "orderHash": null,
+    "marketplaceAddress": "0x027419dc2c82e7739c27fd5a8dc6e6b2d8d43d13",
+    "startTime": null,
+    "endTime": null,
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "18",
+   "poolState": "verified",
+   "processor": "behemoth",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "8116272",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "130342502074844201",
+   "listing": {
+    "source": "TAPEMARKET_SEAPORT",
+    "protocol": "SEAPORT",
+    "chainId": 97,
+    "seller": "0x32d2fbd8b2a776bffe4b7b8e051c863adfd2ccc3",
+    "collectionAddress": "0x1d23dbe7d598fcd598310f746a0d9ff599104239",
+    "tokenId": "1",
+    "priceWei": "10474209900990099",
+    "buyerPaysWei": "10578951999999999",
+    "estimatedProtocolFeeWei": "104742099009900",
+    "listingId": null,
+    "orderHash": "0xf7b84ffea82846e1ec3e2cb86d8f951aad26e3639568b0fb8e444295f011f0e8",
+    "marketplaceAddress": "0x43974e3751c9829fee3395483343f245ab51a539",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "12",
+   "poolState": "verified",
+   "processor": "behemoth",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "5410848",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "131488077284743537",
+   "listing": {
+    "source": "TAPEOUT_OFFICIAL",
+    "protocol": "TAPEOUT_OFFICIAL",
+    "chainId": 97,
+    "seller": "0xfab4b8cbbb66029729bc52d9930956cb9dbd9208",
+    "collectionAddress": "0x1d23dbe7d598fcd598310f746a0d9ff599104239",
+    "tokenId": "2",
+    "priceWei": "7114620000000000",
+    "buyerPaysWei": "7114620000000000",
+    "estimatedProtocolFeeWei": "71146200000000",
+    "listingId": "2",
+    "orderHash": null,
+    "marketplaceAddress": "0x027419dc2c82e7739c27fd5a8dc6e6b2d8d43d13",
+    "startTime": null,
+    "endTime": null,
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "11",
+   "poolState": "verified",
+   "processor": "tapeout",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "4959944",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "132633654734811501",
+   "listing": {
+    "source": "TAPEMARKET_SEAPORT",
+    "protocol": "SEAPORT",
+    "chainId": 97,
+    "seller": "0xfab4b8cbbb66029729bc52d9930956cb9dbd9208",
+    "collectionAddress": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+    "tokenId": "21",
+    "priceWei": "6513420792079207",
+    "buyerPaysWei": "6578554999999999",
+    "estimatedProtocolFeeWei": "65134207920792",
+    "listingId": null,
+    "orderHash": "0x7c0e58b204ba9f47e2eb5359da5feca9b0e58721b3ef7b21f5ba63216d1e771c",
+    "marketplaceAddress": "0x43974e3751c9829fee3395483343f245ab51a539",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "20",
+   "poolState": "verified",
+   "processor": "tapeout",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "9018080",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "133765912478044106",
+   "listing": {
+    "source": "TAPEOUT_OFFICIAL",
+    "protocol": "TAPEOUT_OFFICIAL",
+    "chainId": 97,
+    "seller": "0x3134ba54d9b015d1daa7fbbb1b09c68763c6de59",
+    "collectionAddress": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+    "tokenId": "22",
+    "priceWei": "12063117000000000",
+    "buyerPaysWei": "12063117000000000",
+    "estimatedProtocolFeeWei": "120631170000000",
+    "listingId": "3",
+    "orderHash": null,
+    "marketplaceAddress": "0x027419dc2c82e7739c27fd5a8dc6e6b2d8d43d13",
+    "startTime": null,
+    "endTime": null,
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "18",
+   "poolState": "verified",
+   "processor": "behemoth",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "8116272",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "134911483991665126",
+   "listing": {
+    "source": "TAPEMARKET_SEAPORT",
+    "protocol": "SEAPORT",
+    "chainId": 97,
+    "seller": "0x3134ba54d9b015d1daa7fbbb1b09c68763c6de59",
+    "collectionAddress": "0x1d23dbe7d598fcd598310f746a0d9ff599104239",
+    "tokenId": "3",
+    "priceWei": "10841369306930693",
+    "buyerPaysWei": "10949782999999999",
+    "estimatedProtocolFeeWei": "108413693069306",
+    "listingId": null,
+    "orderHash": "0x191ec24602ad5e84ec5971f6e899bec5d30275d9e38da41383d1174f93c2855a",
+    "marketplaceAddress": "0x43974e3751c9829fee3395483343f245ab51a539",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "12",
+   "poolState": "verified",
+   "processor": "behemoth",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "5410848",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "136057065362028280",
+   "listing": {
+    "source": "TAPEOUT_OFFICIAL",
+    "protocol": "TAPEOUT_OFFICIAL",
+    "chainId": 97,
+    "seller": "0x3fab95f61a32150df319644afdaa1083d6ecd4e1",
+    "collectionAddress": "0x1d23dbe7d598fcd598310f746a0d9ff599104239",
+    "tokenId": "4",
+    "priceWei": "7361841000000000",
+    "buyerPaysWei": "7361841000000000",
+    "estimatedProtocolFeeWei": "73618410000000",
+    "listingId": "4",
+    "orderHash": null,
+    "marketplaceAddress": "0x027419dc2c82e7739c27fd5a8dc6e6b2d8d43d13",
+    "startTime": null,
+    "endTime": null,
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "12",
+   "poolState": "verified",
+   "processor": "tapeout",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "5410848",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "137202634411463766",
+   "listing": {
+    "source": "TAPEMARKET_SEAPORT",
+    "protocol": "SEAPORT",
+    "chainId": 97,
+    "seller": "0x3fab95f61a32150df319644afdaa1083d6ecd4e1",
+    "collectionAddress": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+    "tokenId": "23",
+    "priceWei": "7350322772277227",
+    "buyerPaysWei": "7423825999999999",
+    "estimatedProtocolFeeWei": "73503227722772",
+    "listingId": null,
+    "orderHash": "0x1774fbf69f5fb1c08edac266d7b6e5386627d09a65b060e6f9893f27ca330de9",
+    "marketplaceAddress": "0x43974e3751c9829fee3395483343f245ab51a539",
+    "startTime": "1792931174",
+    "endTime": "1795523174",
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  },
+  {
+   "hashrate": "5",
+   "poolState": "verified",
+   "processor": "tapeout",
+   "dailyOutput": {
+    "availability": "available",
+    "amount": "2254520",
+    "bemUnit": "100000000"
+   },
+   "capacityPriceWei": "133206447492149104",
+   "listing": {
+    "source": "TAPEOUT_OFFICIAL",
+    "protocol": "TAPEOUT_OFFICIAL",
+    "chainId": 97,
+    "seller": "0x32d2fbd8b2a776bffe4b7b8e051c863adfd2ccc3",
+    "collectionAddress": "0xb1c5a17b62814504e8a7643a139742c7616b15fa",
+    "tokenId": "24",
+    "priceWei": "3003166000000000",
+    "buyerPaysWei": "3003166000000000",
+    "estimatedProtocolFeeWei": "30031660000000",
+    "listingId": "5",
+    "orderHash": null,
+    "marketplaceAddress": "0x027419dc2c82e7739c27fd5a8dc6e6b2d8d43d13",
+    "startTime": null,
+    "endTime": null,
+    "purchasable": true,
+    "lifecycleStatus": "ACTIVE"
+   }
+  }
+ ]
+}

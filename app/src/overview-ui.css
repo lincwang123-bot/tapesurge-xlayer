@@ -1,0 +1,76 @@
+/* 总览的准备路径与信息层级；不影响其他路由的卡片和表单。 */
+.overview-refined > .intro { padding: 28px 32px; }
+.overview-refined .intro h1 { font-size: clamp(30px, 3vw, 40px); }
+.overview-refined .intro-eyebrow { margin-bottom: 12px; }
+.overview-refined .intro p { margin-top: 12px; line-height: 1.7; }
+.overview-refined .intro-actions { margin-top: 18px; }
+.overview-refined .intro p.intro-risk { margin-top: 12px; }
+
+.overview-refined .overview-start { gap: 16px; }
+.overview-refined .overview-start-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
+.overview-refined .overview-start-head h2 { font-size: 21px; line-height: 1.4; }
+.overview-refined .overview-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.overview-refined .overview-steps > li { display: flex; align-items: flex-start; gap: 12px; min-width: 0; }
+.overview-refined .overview-steps > li + li { border-left: 1px solid var(--line); padding-left: 20px; }
+.overview-refined .overview-step-number { display: grid; place-items: center; flex: 0 0 30px; height: 30px; margin-top: 2px; border-radius: 50%; background: #e8ddf7; color: var(--lavender); font-family: 'Tape Inter', sans-serif; font-size: 13px; font-weight: 650; }
+.overview-refined .overview-step-content { min-width: 0; }
+.overview-refined .overview-step-content h3 { font-family: 'Tape Body', sans-serif; font-size: 14px; font-weight: 650; line-height: 1.5; }
+.overview-refined .overview-step-links { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.overview-refined .overview-step-action { display: inline-flex; align-items: center; justify-content: flex-start; gap: 6px; min-height: 40px; padding: 4px 0; border: 0; background: none; color: var(--lavender); font-size: 13px; line-height: 1.5; text-decoration: underline; text-underline-offset: 4px; }
+.overview-refined .overview-step-action:hover { color: #8a5ab0; }
+.overview-refined .overview-step-connected { display: inline-flex; align-items: center; min-height: 40px; color: var(--good); font-size: 13px; }
+
+.overview-refined .overview-preparation-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--card-gap); }
+.overview-refined .overview-preparation-grid.is-testnet { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.overview-refined .overview-preparation-grid > .panel { min-width: 0; scroll-margin-top: 20px; }
+.overview-refined .faucet-art { flex: 0 0 auto; min-height: 112px; height: 112px; }
+.overview-refined .faucet-art .brand-art { width: 170px; height: 112px; }
+.overview-refined .faucet > .btn { margin-top: auto; }
+.overview-refined .pass-cost-summary { background: #eee3fa; padding: 16px; }
+.overview-refined .pass-cost-summary > .cost-total { border: 0; padding: 0; align-items: baseline; grid-template-columns: max-content minmax(0, 1fr); gap: 12px; }
+.overview-refined .pass-cost-summary dt { color: var(--text); font-weight: 650; }
+.overview-refined .pass-cost-summary dd { font-family: 'Tape Inter', 'Tape Body', sans-serif; font-size: 20px; font-weight: 650; line-height: 1.4; }
+.overview-refined .pass-cost-details { border: 1px solid var(--line); border-radius: var(--radius-inner); padding: 12px 14px; }
+.overview-refined .pass-cost-details summary { cursor: pointer; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.overview-refined .pass-cost-details .cost { margin-top: 12px; background: transparent; padding: 0; }
+.overview-refined .pass-cost-details p { margin-top: 12px; }
+.overview-refined .pass-nand-warning { background: #fff6dd; border: 1px solid #e4d1a6; border-radius: var(--radius-inner); padding: 12px 14px; color: #73501b; }
+.overview-refined .pass-confirmation-note { font-size: 12px; }
+.overview-refined .mint-box > .btn { align-self: stretch; margin-top: auto; }
+.overview-refined .recruiting-empty { grid-column: 1 / -1; background: var(--panel); border-radius: var(--radius); padding: var(--card-padding); }
+
+@media (max-width: 900px) {
+  .overview-refined .overview-preparation-grid.is-testnet { grid-template-columns: minmax(0, 1fr); }
+  .overview-refined .faucet-art { min-height: 88px; height: 88px; }
+  .overview-refined .faucet-art .brand-art { width: 136px; height: 88px; }
+  .overview-refined .overview-steps { gap: 12px; }
+  .overview-refined .overview-steps > li + li { padding-left: 12px; }
+}
+
+@media (max-width: 720px) {
+  .overview-refined > .intro { padding: 22px 20px; }
+  .overview-refined > .intro::before { background: linear-gradient(90deg, #38264ff5, #38264fd6), url('/brand/hero-scene-v3.png') 72% center / auto 360px no-repeat; }
+  .overview-refined .intro h1 { font-size: clamp(27px, 6.5vw, 36px); }
+  .overview-refined .intro-actions { gap: 12px 16px; margin-top: 16px; }
+  .overview-refined .overview-start { gap: 12px; }
+  .overview-refined .overview-start-head h2 { font-size: 20px; }
+  .overview-refined .overview-start-head p { font-size: 12px; }
+  .overview-refined .overview-steps { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .overview-refined .overview-steps > li { align-items: center; gap: 12px; padding-block: 9px; }
+  .overview-refined .overview-steps > li + li { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+  .overview-refined .overview-steps > li:first-child { padding-top: 0; }
+  .overview-refined .overview-steps > li:last-child { padding-bottom: 0; }
+  .overview-refined .overview-step-content { flex: 1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0 12px; }
+  .overview-refined .overview-step-number { flex-basis: 26px; height: 26px; margin: 0; }
+  .overview-refined .overview-step-content h3 { font-size: 13px; }
+  .overview-refined .overview-step-links { gap: 0 12px; }
+  .overview-refined .overview-step-action { min-height: 44px; font-size: 12px; }
+  .overview-refined .pass-cost-summary dd { font-size: 18px; }
+  .overview-refined .pass-nand-warning { padding: 12px; }
+}
+
+@media (max-width: 380px) {
+  .overview-refined > .intro { padding-inline: 18px; }
+  .overview-refined .overview-step-content { gap: 0 8px; }
+  .overview-refined .overview-step-links { gap: 0 10px; }
+}

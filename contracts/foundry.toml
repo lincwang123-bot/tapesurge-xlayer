@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.28"
+# X Layer 主网实测支持 PUSH0 / MCOPY / TSTORE（2026-10-21 eth_call 探测）；和 BSC 版一样用 shanghai
+evm_version = "shanghai"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+gas_limit = "18446744073709551615"
+fs_permissions = [{ access = "read", path = "./" }, { access = "read-write", path = "./deployments" }]
+
+# 按主网规则检查合约大小（EIP-170 / EIP-3860），只在这个配置里开启：
+#   FOUNDRY_PROFILE=sizecheck forge test --match-path test/SizeLimits.t.sol
+[profile.sizecheck]
+code_size_limit = 24576
+
+[profile.default.fuzz]
+runs = 256
+
+[rpc_endpoints]
+xlayer = "https://rpc.xlayer.tech"
+
+[lint]
+lint_on_build = false

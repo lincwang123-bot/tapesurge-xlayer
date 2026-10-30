@@ -1,0 +1,1430 @@
+[
+ {
+  "type": "constructor",
+  "inputs": [
+   {
+    "name": "monthFactory",
+    "type": "address",
+    "internalType": "address"
+   },
+   {
+    "name": "feeBps",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "BEM",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract IERC20"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "FACTORY",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract XMonthFactory"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "FEE_BPS",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "FEE_RECIPIENT",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "KIND_ASK_TO_BOARD",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint8",
+    "internalType": "uint8"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "KIND_BOARD_TO_BID",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint8",
+    "internalType": "uint8"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "KIND_BUY_ASK",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint8",
+    "internalType": "uint8"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "KIND_BUY_BOARD",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint8",
+    "internalType": "uint8"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "KIND_SELL_TO_BID",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint8",
+    "internalType": "uint8"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "MACHINE_SOURCE",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract IMachineSource"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "MAX_FEE_BPS",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "MAX_OPEN_BIDS",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "MAX_VALIDITY",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "MIN_BID_BUDGET",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "RIG",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract IERC721"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "SALES",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "contract XMonthMachineSales"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "TRADE_HISTORY",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "ask",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "tuple",
+    "internalType": "struct XRigMarket.AskOrder",
+    "components": [
+     {
+      "name": "seller",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "price",
+      "type": "uint96",
+      "internalType": "uint96"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "askCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "askValid",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "bool",
+    "internalType": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "asksPage",
+  "inputs": [
+   {
+    "name": "offset",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "limit",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "out",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.AskView[]",
+    "components": [
+     {
+      "name": "rigId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "seller",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "price",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "power",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "total",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "syncedAt",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "valid",
+      "type": "bool",
+      "internalType": "bool"
+     },
+     {
+      "name": "boardEligible",
+      "type": "bool",
+      "internalType": "bool"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "bid",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "tuple",
+    "internalType": "struct XRigMarket.BidOrder",
+    "components": [
+     {
+      "name": "bidder",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "maxSyncAge",
+      "type": "uint32",
+      "internalType": "uint32"
+     },
+     {
+      "name": "price",
+      "type": "uint96",
+      "internalType": "uint96"
+     },
+     {
+      "name": "remaining",
+      "type": "uint96",
+      "internalType": "uint96"
+     },
+     {
+      "name": "minPower",
+      "type": "uint32",
+      "internalType": "uint32"
+     },
+     {
+      "name": "maxPower",
+      "type": "uint32",
+      "internalType": "uint32"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "bidCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "bidValid",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "bool",
+    "internalType": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "bidsPage",
+  "inputs": [
+   {
+    "name": "offset",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "limit",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "out",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.BidView[]",
+    "components": [
+     {
+      "name": "bidId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "bidder",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "price",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "remaining",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "minPower",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxPower",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxSyncAge",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "valid",
+      "type": "bool",
+      "internalType": "bool"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "boardOffers",
+  "inputs": [
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "out",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.OfferView[]",
+    "components": [
+     {
+      "name": "index",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "rigId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "power",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "total",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "syncedAt",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "syncFresh",
+      "type": "bool",
+      "internalType": "bool"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "book",
+  "inputs": [
+   {
+    "name": "depth",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "asks",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.AskView[]",
+    "components": [
+     {
+      "name": "rigId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "seller",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "price",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "power",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "total",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "syncedAt",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "valid",
+      "type": "bool",
+      "internalType": "bool"
+     },
+     {
+      "name": "boardEligible",
+      "type": "bool",
+      "internalType": "bool"
+     }
+    ]
+   },
+   {
+    "name": "bids",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.BidView[]",
+    "components": [
+     {
+      "name": "bidId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "bidder",
+      "type": "address",
+      "internalType": "address"
+     },
+     {
+      "name": "price",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "remaining",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "minPower",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxPower",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "maxSyncAge",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "deadline",
+      "type": "uint64",
+      "internalType": "uint64"
+     },
+     {
+      "name": "valid",
+      "type": "bool",
+      "internalType": "bool"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "buyAsk",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxTotal",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "total",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "buyBest",
+  "inputs": [
+   {
+    "name": "rigIds",
+    "type": "uint256[]",
+    "internalType": "uint256[]"
+   },
+   {
+    "name": "maxPrice",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxTotal",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "filled",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "spent",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "buyBoardMachine",
+  "inputs": [
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   },
+   {
+    "name": "index",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxPrice",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "cost",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "cancelAsk",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "cancelBid",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "fillBidFromBoard",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   },
+   {
+    "name": "index",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "cost",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "lastBidId",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "listAsk",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "price",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "deadline",
+    "type": "uint64",
+    "internalType": "uint64"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "openBidsOf",
+  "inputs": [
+   {
+    "name": "",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "placeBid",
+  "inputs": [
+   {
+    "name": "price",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "budget",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "minPower",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxPower",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxSyncAge",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "deadline",
+    "type": "uint64",
+    "internalType": "uint64"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "pruneAsks",
+  "inputs": [
+   {
+    "name": "rigIds",
+    "type": "uint256[]",
+    "internalType": "uint256[]"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "recentTrades",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "out",
+    "type": "tuple[]",
+    "internalType": "struct XRigMarket.Trade[]",
+    "components": [
+     {
+      "name": "rigId",
+      "type": "uint256",
+      "internalType": "uint256"
+     },
+     {
+      "name": "price",
+      "type": "uint96",
+      "internalType": "uint96"
+     },
+     {
+      "name": "power",
+      "type": "uint32",
+      "internalType": "uint32"
+     },
+     {
+      "name": "time",
+      "type": "uint40",
+      "internalType": "uint40"
+     },
+     {
+      "name": "kind",
+      "type": "uint8",
+      "internalType": "uint8"
+     }
+    ]
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "refundBid",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "sellAskToBoard",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "board",
+    "type": "address",
+    "internalType": "address"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "total",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "sellToBid",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "internalType": "uint256"
+   },
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "cost",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "name": "totalEscrow",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "name": "tradeCount",
+  "inputs": [],
+  "outputs": [
+   {
+    "name": "",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "name": "AskCancelled",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "by",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "AskListed",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "seller",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "price",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "deadline",
+    "type": "uint64",
+    "indexed": false,
+    "internalType": "uint64"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "BidClosed",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "refund",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "reason",
+    "type": "uint8",
+    "indexed": false,
+    "internalType": "uint8"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "BidPlaced",
+  "inputs": [
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "bidder",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "price",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "budget",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "minPower",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxPower",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "maxSyncAge",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "deadline",
+    "type": "uint64",
+    "indexed": false,
+    "internalType": "uint64"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "event",
+  "name": "RigTraded",
+  "inputs": [
+   {
+    "name": "rigId",
+    "type": "uint256",
+    "indexed": true,
+    "internalType": "uint256"
+   },
+   {
+    "name": "seller",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "buyer",
+    "type": "address",
+    "indexed": true,
+    "internalType": "address"
+   },
+   {
+    "name": "price",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "power",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "total",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "fee",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "bidId",
+    "type": "uint256",
+    "indexed": false,
+    "internalType": "uint256"
+   },
+   {
+    "name": "kind",
+    "type": "uint8",
+    "indexed": false,
+    "internalType": "uint8"
+   }
+  ],
+  "anonymous": false
+ },
+ {
+  "type": "error",
+  "name": "AskNotValid",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BadConfig",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BadDeadline",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BadPowerRange",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BidClosedAlready",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BidExpired",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BidStillValid",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BudgetExceeded",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "BudgetTooSmall",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NoAsk",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NoPower",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NotApproved",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NotBidder",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NotForSale",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NotMonthBoard",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NotOwner",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "NothingFilled",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "PaymentMismatch",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "PowerOutOfRange",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "PriceAbove",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "ReentrancyGuardReentrantCall",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "SafeCastOverflowedUintDowncast",
+  "inputs": [
+   {
+    "name": "bits",
+    "type": "uint8",
+    "internalType": "uint8"
+   },
+   {
+    "name": "value",
+    "type": "uint256",
+    "internalType": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "error",
+  "name": "SafeERC20FailedOperation",
+  "inputs": [
+   {
+    "name": "token",
+    "type": "address",
+    "internalType": "address"
+   }
+  ]
+ },
+ {
+  "type": "error",
+  "name": "SelfTrade",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "SyncTooOld",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "TooManyBids",
+  "inputs": []
+ },
+ {
+  "type": "error",
+  "name": "ZeroPrice",
+  "inputs": []
+ }
+]

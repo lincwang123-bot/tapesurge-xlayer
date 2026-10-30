@@ -1,0 +1,22 @@
+{
+  "name": "tapesurge-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TapeSurge 运营机器人：开奖、推进阶段、发放、交接和挂单、哨兵登记、余额监控",
+  "scripts": {
+    "sync": "node scripts/sync-contracts.mjs",
+    "start": "node src/index.js",
+    "once": "node src/index.js --once",
+    "dry": "node src/index.js --once --dry-run",
+    "test": "node --test src/*.test.js",
+    "notify": "node src/notify/index.js",
+    "notify:once": "node src/notify/index.js --once"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "viem": "2.57.3"
+  }
+}
