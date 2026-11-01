@@ -6,6 +6,8 @@
 |---|---|
 | Live app (X Layer testnet) | https://app.tapesurge.com/?chain=1952 |
 | RIG market | https://app.tapesurge.com/?chain=1952#/market |
+| Website | https://tapesurge.com |
+| Whitepaper (X Layer edition: section 15) | [tapesurge.com/whitepaper](https://tapesurge.com/whitepaper) · [section 15 on GitHub](https://github.com/lincwang123-bot/tapesurge-contracts/blob/main/docs/TapeSurge白皮书-V5.md#15-x-layer-版测试网运行中主网待审计后上线) |
 | BNB Chain version (mainnet since 2026-10-26) | https://github.com/lincwang123-bot/tapesurge-contracts |
 | Hackathon | OKX Xccelerate · X Layer TapeOut developer program (2026-10-16 – 2026-12-07) |
 
